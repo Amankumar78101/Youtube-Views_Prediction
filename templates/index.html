@@ -1,0 +1,64 @@
+{% extends "base.html"%}
+{% block content %}
+
+<div class="container">
+    <div class="jumbotron">
+
+        <div class="float-sm-start">
+            <h1>Introduction About the Data :</h1>
+
+            <h2>Data Resources download link</h2>
+            <a href="https://drive.google.com/drive/folders/1G0vNeJ9MQ45S0ktq95szOwyeasbe8Il5" download="finalTrain.csv">Download finalTrain.csv</a>
+            <h2>Github repository link</h2>
+            <a href="https://github.com/Amankumar78101/Zomato-Time-Taken-Prediction">Link to GitHub repository</a>
+
+            <h3>Zomato Time taken  delivery Prediction </h2>
+
+            <p><b><b>Aim of Data</b> The goal of the dataset, which is to predict the Time_taken for a given delivery using (Regression Analysis).</b></p>
+            <ol>
+                <li><b>ID :</b> unique identifier of each Zomato record or item in the dataset.</li>
+                <li><b>Delivery_person_ID :</b> Delivery_person_ID refers to the unique ID that the delivery person gets when they receive an order from Zomato.</li>
+                
+                <li><b>Delivery_person_Age :</b> Delivery person age refers to the age of the person who is delivering the order </li>
+
+                <li><b> Delivery_person_Ratings :</b> Delivery person Ratings refers to the Ratings  of the person who is delivering the order</li>
+
+                <li><b> Restaurant_latitude :</b> Restaurant latitude refers to the latitude of the location of the restaurant where the order is placed.</li>
+
+                <li><b> Restaurant_longitude :</b> Restaurant longitude refers to the longitude  of the location of the restaurant where the order is placed.</li>
+
+                <li><b> Delivery_location_latitude :</b> Delivery location latitude refers to the latitude of the location where the order is being delivered. </li>
+
+                <li><b> Delivery_location_longitude :</b> Delivery location longitude refers to the longitude of the location where the order is being delivered.</li>
+
+                <li><b> Order_Date :</b> Order Date" refers to the date when the order was placed.</li>
+
+                <li><b> Time_Orderd :</b>Time Ordered refers to the time when the order was placed</li>
+
+                <li><b> Time_Order_picked :</b> Time Order Picked refers to the time when the delivery person picked up the order from the restaurant.</li>
+
+                <li><b> Weather_conditions :</b> Weather Conditions refers to the atmospheric conditions at the time of delivery.</li>
+
+                <li><b> Road_traffic_density :</b>  Road traffic density refers to the amount of traffic on the road at the time of delivery, which can affect the delivery time.</li>
+
+                <li><b> Vehicle_condition :</b> Vehicle condition refers to the state of the delivery vehicle, such as its maintenance, fuel level, and cleanliness</li>
+
+                <li><b> Type_of_order :</b> Type of order refers to the categorization of orders based on their attributes, such as the type of cuisine, the size of the order, and the delivery method</li>
+
+                <li><b> Type_of_vehicle :</b> Type of vehicle refers to the type of vehicle used for the delivery.</li>
+
+                <li><b> multiple_deliveries :</b> Multiple deliveries refers to the situation where a delivery person has to deliver multiple orders at the same time or in quick succession.</li>
+
+                <li><b> Festival :</b> Festival refers to whether there is a festival or not during the time of delivery</li>
+
+                <li><b> City :</b> City refers to the city where the order is placed.</li>
+            </ol>
+            <ol>
+                <h3>Target variable:</h3>
+                    <li><b>Time_taken (min) :</b> Time_taken (min) refers to the time taken to deliver the order from the restaurant to the delivery location.</li>
+
+            </ol>
+        </div>
+    </div>
+</div>
+{% endblock %}

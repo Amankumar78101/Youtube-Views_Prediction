@@ -1,0 +1,12 @@
+US
+UK
+GB
+DE
+CA
+FR
+KR
+RU
+JP
+BR
+MX
+IN

@@ -1,0 +1,105 @@
+{% extends "base.html"%}
+{% block content %}
+<div class="container">
+  <div class="jumbotron">
+      <form action="{{url_for('predict_datapoint')}}" method="POST" >
+            <div class="form-group">
+                <label for="Age">Age:</label>
+                <input type="number" id="Age" name="Age" placeholder="Enter the Age">
+            </div>
+
+            <div class="form-group">
+                <label for="Ratings">Ratings:</label>
+                <input type="number" id="Ratings" name="Ratings" placeholder="Enter the Ratings">
+            </div>
+            <div class="form-group">
+              <label for="Vehicle condition">Vehicle condition:</label>
+              <select class="form-select" aria-label="Default select example" id="Vehicle condition" name="Vehicle condition">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                
+              </select>
+            </div> 
+            <div class="form-group">
+              <label for="Multiple deliveries">Multiple deliveries:</label>
+              <select class="form-select" aria-label="Default select example" id="Multiple deliveries" name="Multiple deliveries">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+      
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="Weather conditions">Weather conditions:</label>
+              <select class="form-select" aria-label="Default select example" id="Weather conditions" name="Weather conditions">
+                <option value="Fog">Fog</option>
+                <option value="Stormy">Stormy</option>
+                <option value="Sandstorms">Sandstorms</option>
+                <option value=Windy>Windy</option>
+                <option value=Cloudy>Cloudy</option>
+                <option value=Sunny>Sunny</option>
+      
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="Road traffic density">Road traffic density:</label>
+              <select class="form-select" aria-label="Default select example" id="Road traffic density" name="Road traffic density">
+                <option value="Low">Low</option>
+                <option value="Jam">Jam</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+      
+              </select>
+            </div>
+          
+            <div class="form-group">
+                <label for="Type of order">Type of order:</label>
+                <select class="form-select" aria-label="Default select example" id="Type of order" name="Type of order">
+                  <option value="Snack">Snack</option>
+                  <option value="Buffet">Buffet</option>
+                  <option value="Meal">Meal</option>
+                  <option value="Drinks">Drinks</option>
+                </select>
+            </div> 
+            <div class="form-group">
+              <label for="Type of vehicle">Type of vehicle:</label>
+              <select class="form-select" aria-label="Default select example" id="Type of vehicle" name="Type of vehicle">
+                <option value="motorcycle">Motorcycle</option>
+                <option value="scooter">Scooter</option>
+                <option value="electric_scooter">Electric Scooter</option>
+                <option value="bicycle">Bicycle</option>
+              </select>
+            </div>        
+            <div class="form-group">
+              <label for="Festival">Festival:</label>
+              <select class="form-select" aria-label="Default select example" id="Festival" name="Festival">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+                
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="City">City:</label>
+              <select class="form-select" aria-label="Default select example" id="City" name="City">
+                <option value="Metropolitian">Metropolitian</option>
+                <option value="Urban">Urban</option>
+                <option value="Semi-Urban">Semi-Urban</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="Displacement">Displacement:</label>
+              <input type="number" id="Displacement" name="Displacement" placeholder="Enter the Displacement">
+            </div>
+
+
+            <div style="clear:both;"></div>
+              <input type="submit" value="Submit">     
+      </form>
+  </div>
+</div>
+  
+{% endblock %}
